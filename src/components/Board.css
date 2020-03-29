@@ -1,0 +1,10 @@
+.board {
+  align-items: center;
+}
+
+.boardRow:after {
+    clear: both;
+    content: '';
+    display: table;
+
+  }

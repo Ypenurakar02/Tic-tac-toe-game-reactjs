@@ -1,0 +1,94 @@
+.game {
+  display: flex;
+  flex-direction: row;
+  flex-flow: column;
+  align-items: center;
+  margin: none;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.gameInfo {
+  margin-left: 50px;
+}
+
+.gameBoard {
+  align-items: center;
+  margin: 20px;
+}
+
+.playerStatus {
+  text-align: center;
+  margin-top: 4vh;
+  display: flex;
+  font-size: 12px;
+}
+@media (min-width:100px) {
+  .playerStatus{
+    font-size: 3.5vmin;
+  }
+}
+@media (min-width:900px) and (min-height:501px) {
+  .playerStatus{
+    font-size: 1.2rem;
+  }
+}
+
+.playerStatusX {
+  color: crimson;
+}
+
+.playerStatusO {
+  color: darkgoldenrod;
+}
+
+.resetButton {
+  background: #48bdd1;
+  border: none;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  height: 30px;
+  width: 270px;
+  margin: 1px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+}
+
+.resetButton:hover {
+  background: #282c34;
+  border: none;
+}
+
+.resetButton:focus {
+  outline: none;
+}
+
+@media (min-width:100px) {
+  .resetButton {
+    width: 26vw;
+    height: 6vh;
+    line-height: 3vh;
+    font-size: 3vmin;
+  }
+}
+
+@media (min-width:900px) and (min-height:501px) {
+  .resetButton {
+    width: 30vw;
+    height: 4vh;
+    font-size: 1.8vmax;
+  }
+  .resetButton:hover {
+    background: #48bdd1;
+    border: none;
+  }
+
+}

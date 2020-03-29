@@ -1,0 +1,59 @@
+.square {
+  background: #48bdd1;
+  border: none;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 20px;
+  width: 20px;
+  margin: 1px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+@media (min-width:100px) {
+  .square {    
+    width: 8vw;
+    height: 10vh;
+    font-size: 8vmin;
+  }
+}
+
+@media (min-width:900px) and (min-height:501px) {
+  .square {    
+    width: 10vw;
+    height: 8vh;
+    
+  }
+}
+
+
+.square:not(.playerX):not(.playerO):hover {
+  background-color: #3d4250;
+  opacity: 0.8;
+}
+
+.square--green {
+  background: green;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.playerX {
+  content: '\f00d';
+  background: crimson;
+}
+
+.playerO {
+  content: '\004F';
+  background: darkgoldenrod;
+}
